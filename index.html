@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recycle Bin Game</title>
+</head>
+<body>
+    <div style="text-align: center;" id="welcomeSection">
+        <img src="./assets/images/Intro.png" alt="Intro.png" id="welcomeImage" /> 
+        <h1 style="text-align: center;">Welcome to Code-Cycle-Squad's Recycle Bin Game</h1>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="gameSection" style="display:none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <button id="endGameButton" onclick="endGame()">End Game</button>
+    </div>
+
+    <div  id="endSection" style="display:none; text-align: center;">
+        <img src="./assets/images/instructions.png" alt="Welcome" id="welcomeImage" /> 
+        <h1>Game Over</h1>
+        <p>Your final score: <span id="finalScore"></span></p>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
